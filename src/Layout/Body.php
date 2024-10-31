@@ -3,15 +3,15 @@
 namespace Layout;
 
 class Body{
-    public static function render($load_view){
+    public static function render($load_view, $data = []){
 
-       
         Header::render_self();
+        $view = "/";
         
-        $view = "/ ";
-        $view = rtrim($view);
         $view = $view . $load_view;
-        include __DIR__ .'/../Views' . $view .".ph";
+        $data_view = $data;
+        
+        include __DIR__ .'/../Views/Pages' . $view .".ph";
         Footer::render_self();
     }
 }

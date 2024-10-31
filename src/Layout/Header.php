@@ -20,6 +20,8 @@ class Header
                 </div>
             </div>
         </nav>
+
+        <div class="p-4">
         <?php
     }
 }

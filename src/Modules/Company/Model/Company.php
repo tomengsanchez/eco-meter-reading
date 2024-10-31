@@ -1,7 +1,7 @@
 <?php
 namespace Model;
 
-Class CompanyModel extends Model{
+Class CompanyModel extends ModelClass{
 
     public function __construct(){
         
