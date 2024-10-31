@@ -1,10 +1,12 @@
 <?php 
 namespace Src\Controller;
 
+use Layout\Body;
+
 class DashboardController{
 
 
     public static function index(){
-        echo "Hellow";
+        Body::render('Dashboard\Index');
     }
 }

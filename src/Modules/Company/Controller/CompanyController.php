@@ -1,14 +1,14 @@
 <?php 
 namespace Src\Controller;   
 
+use Layout\Body;
 use Src\Controller;
-use Model\CompanyModel;
+
+
 class CompanyController extends Controller{
-
+     
     public static function index(){
-        echo "This is company";
-
-        // print_r(new CompanyModel()); 
+        Body::render('Company\List');
     }
 
     public function create(){

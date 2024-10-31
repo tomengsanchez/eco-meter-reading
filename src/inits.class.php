@@ -1,4 +1,6 @@
 <?php 
+
+
 add_action('init', 'custom_post');
 function custom_post() {
     register_post_type('behandelingen',

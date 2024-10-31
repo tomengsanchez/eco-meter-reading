@@ -1,11 +1,11 @@
 <?php 
 
-use Src\Controller\DashboardController;
 use Src\Controller\CompanyController;
+use Src\Controller\DashboardController;
 
 
 add_action('admin_menu',function(){
-    add_menu_page('Meter Reading','Meter Reading','manage_options','meter-reading-dashboard',[new DashboardController() ,'index'],'dashicons-location-alt',22);
+    add_menu_page('Meter Reading','Meter Reading','manage_options','meter-reading-dashboard',[new DashboardController,'index'],'dashicons-location-alt',22);
     add_submenu_page( 'meter-reading-dashboard', 'Dashboard', 'Dashboard', 'manage_options', 'meter-reading-dashboard', function(){}); // replace function(){} with your function name
     add_submenu_page( 'meter-reading-dashboard', 'Company', 'Company', 'manage_options', 'meter-reading-company',[new CompanyController, 'index']);
 
@@ -24,3 +24,4 @@ add_action('admin_menu',function(){
         
     // });
 });
+
