@@ -18,19 +18,19 @@ class Header
                         <?php
                         $links = [
                             'Home' => [
-                                'link' => '?page=meter-reading-dashboard',
+                                'link' => 'meter-reading-dashboard',
                                 'icon' => 'bi-bar-chart-line'
                             ],
                             'Company' => [
-                                'link' => '?page=meter-reading-company',
+                                'link' => 'meter-reading-company',
                                 'icon' => 'bi-building'
                             ],
                             'Meters' => [
-                                'link' => '?page=meter-reading-company',
+                                'link' => 'meter-reading-company',
                                 'icon' => 'bi-speedometer2',
                             ],
                             'Departments' => [
-                                'link' => '?page=meter-reading-company',
+                                'link' => 'meter-reading-company',
                                 'icon' => 'bi-people-fill'
                             ],
                         ];
