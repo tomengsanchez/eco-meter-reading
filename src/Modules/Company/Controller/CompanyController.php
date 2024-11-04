@@ -1,22 +1,30 @@
-<?php 
-namespace Src\Controller;   
+<?php
+namespace Src\Controller;
 
 use Layout\Body;
 use Model\CompanyModel;
 use Src\Controller;
 
+class CompanyController extends Controller
+{
 
-class CompanyController extends Controller{
-     
-    public static function index(){
+    public static function index()
+    {
         $data['test'] = 'tomeng';
-        Body::render('Company/List',$data);
+        Body::render('Company/List', $data);
     }
 
-    public function create(){
+    //     <?php 
+// echo "<pre>";
+// print_r($data);
+// echo "</pre>";
+
+    public function create()
+    {
 
     }
-    public function store(){
+    public function store()
+    {
 
     }
 }
