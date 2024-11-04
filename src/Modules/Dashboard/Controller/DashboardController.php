@@ -7,6 +7,6 @@ class DashboardController{
 
 
     public static function index(){
-        Body::render('Dashboard\Index');
+        Body::render('Dashboard/Index');
     }
 }
