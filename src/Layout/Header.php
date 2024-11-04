@@ -12,10 +12,10 @@ class Header
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Features</a>
-                        <a class="nav-link" href="#">Pricing</a>
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link active" href="?page=meter-reading-dashboard">Home</a>
+                        <a class="nav-link" href="?page=meter-reading-company">Company</a>
+                        <a class="nav-link" href="?page=meter-reading-meters">Meters</a>
+                        <a class="nav-link" href="?page=meter-reading-departments">Departments</a>
                     </div>
                 </div>
             </div>
