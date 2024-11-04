@@ -2,12 +2,17 @@
 
 use Src\Controller\CompanyController;
 use Src\Controller\DashboardController;
+use Src\Controller\MeterController;
 
 
 add_action('admin_menu',function(){
     add_menu_page('Meter Reading','Meter Reading','manage_options','meter-reading-dashboard',[new DashboardController,'index'],'dashicons-location-alt',22);
     add_submenu_page( 'meter-reading-dashboard', 'Dashboard', 'Dashboard', 'manage_options', 'meter-reading-dashboard', function(){}); // replace function(){} with your function name
     add_submenu_page( 'meter-reading-dashboard', 'Company', 'Company', 'manage_options', 'meter-reading-company',[new CompanyController, 'index']);
+
+    //Meters
+    add_submenu_page( 'meter-reading-dashboard', 'Meter', 'Meter', 'manage_options', 'meter-reading-meter',[new MeterController, 'index']);
+    add_submenu_page( 'meter-reading-meter', 'Add New Meter', 'Add Meter', 'manage_options', 'meter-reading-meter-new',[new MeterController, 'create']);
 
     //ITEMS List
     // add_submenu_page( 'shell-inventory-dashboard', 'Items', 'Items', 'manage_inventory', 'shell-inventory-items', 'shell_item_list' );

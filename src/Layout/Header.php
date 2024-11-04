@@ -26,7 +26,7 @@ class Header
                                 'icon' => 'bi-building'
                             ],
                             'Meters' => [
-                                'link' => 'meter-reading-company',
+                                'link' => 'meter-reading-meter',
                                 'icon' => 'bi-speedometer2',
                             ],
                             'Departments' => [
